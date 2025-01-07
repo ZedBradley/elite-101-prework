@@ -17,12 +17,15 @@ class Book:
         self.stock = stock
 
 def user_selection():
-    while():
+    while(True):
         display_menu()
         number = str(input("\nEnter a number 1-4: "))
         if(number == "1"):
             print("\nLets find your book!")
-            input("Enter the genre first, is it fiction or non-fiction: ")
+            while():    
+                genre = input("Enter the genre first, is it fiction or non-fiction: ")
+                if(genre != fiction or non-fiction):
+                    print("check you spelling!")
             input("Now enter the authors name: ")
 
         elif(number == "2"):
