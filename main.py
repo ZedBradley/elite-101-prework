@@ -8,7 +8,8 @@ def display_menu():
     print("1: Find a book")
     print("2: Check out a book")
     print("3: Return a book")
-    print("4: exit")
+    print("4: Recommend a book")
+    print("5: exit")
     
 class Book: 
     def __init__(self, title, location, stock):
@@ -22,11 +23,17 @@ def user_selection():
         number = str(input("\nEnter a number 1-4: "))
         if(number == "1"):
             print("\nLets find your book!")
-            while():    
+            while(True):    
                 genre = input("Enter the genre first, is it fiction or non-fiction: ")
-                if(genre != fiction or non-fiction):
-                    print("check you spelling!")
-            input("Now enter the authors name: ")
+                if(genre == "fiction" or "non-fiction"):
+                    break
+                else:
+                    print("Check your spelling!")
+            author = input("Now enter the first letter of the authors last name: ")
+            if(genre == "fiction"):
+                print("Go to the second story and find the '" + author + "' section, then search the shelves for your book!")
+            elif(genre == "non-fiction"):
+                print("Go to the first story and find the '" + author + "' section, then search the shelves for your book!")
 
         elif(number == "2"):
             print("\nCheck out a book")
@@ -36,6 +43,18 @@ def user_selection():
             print("\nReturn a book")
             print("I hope you loved it! Go to the front desk, there they will scan the book and clear your name.")
         elif(number == "4"):
+            if(age < 8):
+                print("Based on your age, I recommend the book 'Captain Underpants'!")
+            if(age < 12):
+                print("Based on your age, I recommend the book 'Eragon'!")
+            if(age < 16):
+                print("Based on your age, I recommend the series 'The Lord of the Rings'!")
+            if(age < 25):
+                print("Based on your age, I recommend the series 'A Game of Thrones'!")
+            else:
+                print("Based on your age, I recommend the book 'The Bible'!")
+            
+        elif(number == "5"):
             print("\nend")
             print("Thank you for chatting, see you next time!")
             break
