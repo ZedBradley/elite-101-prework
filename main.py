@@ -20,7 +20,7 @@ class Book:
 def user_selection():
     while(True):
         display_menu()
-        number = str(input("\nEnter a number 1-4: "))
+        number = str(input("\nEnter a number 1-5: "))
         if(number == "1"):
             print("\nLets find your book!")
             while(True):    
@@ -43,13 +43,13 @@ def user_selection():
             print("\nReturn a book")
             print("I hope you loved it! Go to the front desk, there they will scan the book and clear your name.")
         elif(number == "4"):
-            if(age < 8):
+            if(int(age) < 8):
                 print("Based on your age, I recommend the book 'Captain Underpants'!")
-            if(age < 12):
+            if(int(age) < 12):
                 print("Based on your age, I recommend the book 'Eragon'!")
-            if(age < 16):
+            if(int(age) < 16):
                 print("Based on your age, I recommend the series 'The Lord of the Rings'!")
-            if(age < 25):
+            if(int(age) < 25):
                 print("Based on your age, I recommend the series 'A Game of Thrones'!")
             else:
                 print("Based on your age, I recommend the book 'The Bible'!")
