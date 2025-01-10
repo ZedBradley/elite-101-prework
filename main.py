@@ -52,7 +52,7 @@ def user_selection():
             if(int(age) < 25):
                 print("Based on your age, I recommend the series 'A Game of Thrones'!")
             else:
-                print("Based on your age, I recommend the book 'The Bible'!")
+                print("Based on your age, I recommend the book 'Romeo and Juliet'!")
             
         elif(number == "5"):
             print("\nend")
